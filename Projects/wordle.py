@@ -1,7 +1,32 @@
 import random
 
 # Pick a word at random
-word_list = ["loopy","heart","audio","laugh","trial", "slate", "dream", "brain", "press", "vital", "yield", "envoi", "fadge", "drupe", "ouija", "rural", "ergot", "abuzz", "borts", "imbue", "oorie", "xenyl"]
+word_list = ["loopy","heart","audio","laugh","trial", "slate", "dream", "brain", "press", "vital", "yield", "envoi", "fadge", "drupe", "ouija", "rural", "ergot", "abuzz", "borts", "imbue","abide", "apple", "angel", "actor", "altar",
+"brave", "beach", "brush", "baker", "bound",
+"cabin", "candy", "clear", "crisp", "crawl",
+"dance", "draft", "drain", "daisy", "ditch",
+"eager", "eagle", "early", "elite", "entry",
+"faith", "fancy", "feast", "flame", "front",
+"giant", "globe", "grape", "greet", "guide",
+"habit", "happy", "harsh", "hatch", "honor",
+"ideal", "image", "imply", "index", "irony",
+"jelly", "jolly", "joint", "judge", "jumpy",
+"karma", "kayak", "kneel", "knock", "known",
+"label", "latch", "learn", "light", "liver",
+"magic", "maker", "march", "match", "moral",
+"naive", "nasty", "noble", "noisy", "novel",
+"ocean", "offer", "often", "onion", "orbit",
+"paint", "panel", "party", "peace", "prior",
+"quack", "quake", "queen", "query", "quick",
+"raise", "ranch", "reach", "right", "river",
+"scale", "score", "sheep", "sight", "spice",
+"table", "taste", "teach", "thing", "trust",
+"ultra", "uncle", "under", "union", "upper",
+"valid", "value", "vapor", "vivid", "vocal",
+"waist", "watch", "water", "weird", "wrist",
+"xenon", "xylem", "xerox", "xenia", "xysti",
+"yacht", "yearn", "yeast", "yield", "young",
+"zebra", "zilch", "zesty", "zonal", "zoomy" ]
 hidden_word = random.choice(word_list)
 
 # Repeat for 6 guesses
