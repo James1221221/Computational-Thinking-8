@@ -25,22 +25,60 @@ window = turtle.Screen()
 window.tracer(0)
 
 # Section 2: Setup
-s1 = create_sprite ("car", -200, 0)
+s1 = create_sprite ("car", -250, 0)
 set_background ("road")
 lives = 3
 
+s2 = create_sprite ("fuzz",250,0)
+
+def move_right () :
+	s1. setheading (0)
+	s1. forward (10)
+
+def move_down () :
+	s1. setheading (270)
+	s1. forward (10)
+
+def move_up () :
+	s1. setheading (90)
+	s1. forward (10)
+
+def move_left () :
+	s1. setheading (180)
+	s1. forward (10)
+
+
 # Section 3: Controls
-# TODO - define your controls
-# TODO - pick keys for each control
+window.onkeypress (move_down, "Down")
+
+window.onkeypress (move_right,"Right")
+
+window.onkeypress (move_up, "Up")
+
+window.onkeypress (move_left, "Left")
+
 
 # Section 4: Game Loop
 window.listen()
 timer = 0
 while True:
 	time.sleep(0.1)
-	timer += 1  
-	 
+	timer += 1 
+
+	s2.setheading (180)
+	s2. forward (10)
+
+	if get_distance (s1,s2) < 10:
+		lives -= 1 
+	
+	if timer == 400:
+		s1.write ("You escaped!",font = ("Arial", 40, "normal"))
+		break
     
+	if lives == 0:
+		s1.write ("Busted!",font = ("Arial", 40, "normal"))
+	if s2.xcor()<-250:
+		s2.goto (250,random. randint (-100, 100))
  	# TODO - code for automatic actions
 
 
